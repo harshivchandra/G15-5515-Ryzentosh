@@ -78,10 +78,10 @@ Tech's brave pioneers, no matter the cost.
 
 No Stage Manager: 
 
-![Screenshot 2023-08-08 at 6 08 04 PM](https://github.com/chcheetah/G15-5515-Ryzentosh/assets/79366050/6e2312c3-5168-40ab-a111-0971f06cfacd)
+![Screenshot 2023-08-08 at 6 08 04 PM](https://github.com/chcheetah/G15-5515-Ryzentosh/blob/main/Images/Screenshot%202023-08-08%20at%206.08.04%20PM.png)
 
 With Stage Manager:
-![Screenshot 2023-08-08 at 6 41 46 PM](https://github.com/chcheetah/G15-5515-Ryzentosh/assets/79366050/e3b66234-f0ec-4790-a2f1-2e32f67e5143)
+![Screenshot 2023-08-08 at 6 41 46 PM](https://github.com/chcheetah/G15-5515-Ryzentosh/blob/main/Images/Screenshot%202023-08-08%20at%206.41.46%20PM.png)
 
 
 
