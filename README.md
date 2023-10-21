@@ -1,4 +1,12 @@
-# G15-5515-Ryzentosh 
+# G15-5515-Ryzentosh SONOMA
+
+Hey There fellow user! This branch is only for those folks who want to run macOS Sonoma or later on their machines.
+
+In case you want to run Ventura, look into the main branch instead.
+
+Thank you.
+
+I shall be updating all branches on a regular basis, as time permits.
 
 <h2> A mandatory sea shanty 😄</h2>
 <pre>
