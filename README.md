@@ -1,5 +1,16 @@
 # G15-5515-Ryzentosh 
 
+
+Update 2.0 is out (29/10/24)!
+
+Some bug fixes/patches applied to EFI :
+
+1. Working trackpad gestures!!!!
+2. Less microstutter throughout the system when running Ventura.
+3. No usb controller bugs during the boot process.
+4. Changed device type from iMac Pro to MacBook Pro.
+
+
 <h2> A mandatory sea shanty 😄</h2>
 <pre>
 Oh, I had a dream one night so bold,
@@ -51,22 +62,24 @@ Tech's brave pioneers, no matter the cost.
 <h2>Current EFI scenario (listed in order of functionality)</h2>
 
 
-| Component | Status | Compatible? |
-|-----------|--------|-------------|
-|CPU: AMD R7 5800H  | CPU supported,detected as intel core i5|  ✅|
-|iGPU: AMD Vega 8| GPU supported, Metal2 API capable|  ✅|
-|WiFi : Killer AX600| supported,detected as intel AX600 |✅|
-|Bluetooth: Killer AX600| supported,detected as intel AX600| ✅|
-|Speakers|supported|✅|
-|Built in Webcam| supported|✅|
-|FaceTime, iMessage, Apple Services| supported|✅|
-|Screen|supported, both 120hz and 60hz modes available with pro-motion|✅|
-|Keyboard|supported, with different backlight levels|✅|
-|USB Ports| supported, all running at full speeds| ✅|
-|SODIMM slots & Memory| supported, all 64 gigs detected|✅|
-|Trackpad|supported, detected as ps2 mouse|🚧|
-|Storage| partially supported, Crucial drive acting as main drive, SK Hynix drive disabled in ACPI patches to prevent KP | 🚧|
-|dGPU: Nvidia RTX 3050Ti| GPU not supported even by web drivers |❌|
+| Component | Status (Initial) | Status (Update 2.0) |Initial Release Comments| Update 2.0 Comments |
+|-----------|--------|-------------|---------------|-------------|
+|CPU: AMD R7 5800H |  ✅|  ✅ | CPU supported,detected as Intel Core i5| CPU supported & detected as Ryzen CPU|
+|iGPU: AMD Vega 8|  ✅ |  ✅ | GPU supported, Metal2 API capable|  GPU supported, Metal3 API capable|
+|WiFi : Killer AX600|   ✅ | ✅ | supported, detected as intel AX600| supported, detected as intel AX600|
+|Bluetooth: Killer AX600|   ✅ |  ✅| supported,detected as intel AX600| supported, detected as intel AX600|
+|Speakers|✅|  ✅|supported|supported|
+|Built in Webcam|  ✅|✅|supported|supported|
+|FaceTime, iMessage, Apple Services|  ✅|✅|supported|supported|
+|Screen|  ✅|  ✅| supported, with promotion| supported, with promotion |
+|Keyboard|   ✅|  ✅| supported, with different backlight levels| supported, with different backlight levels|
+|USB Ports|   ✅  | ✅|supported, all running at full speeds| supported, all running at full speeds|
+|SODIMM slots & Memory|   ✅|  ✅|supported, all 64 gigs detected|supported, all 64 gigs detected|
+|Trackpad|🚧| ✅|supported, detected as ps2 mouse|supported, with all apple trackpad gestures available|
+|Stability|❌|✅| microstutters, and unable to sleep without errors. | no microstutters, able to sleep without errors|
+|USB issue| 🚧| ✅| requires constant plugging & unplugging of usb devices to boot, otherwise KP | fixed now using GenericUSBXHCI.kext, no such requirement during boot |
+|Storage| 🚧| 🚧| partially supported, Crucial drive acting as main drive, SK Hynix drive disabled in ACPI patches to prevent KP |partially supported, Crucial drive acting as main drive, SK Hynix drive disabled in ACPI patches to prevent KP  |
+|dGPU: Nvidia RTX 3050Ti|❌|❌| GPU not supported even by web drivers, disabled. |GPU not supported even by web drivers, disabled.|
  
 
 <h2>Supported (and verified) macOS versions:</h2>
@@ -92,7 +105,7 @@ Do note that this project is intended solely for personal educational use and no
 
 |<h2> Credits</h2>|
 |----|
-|Apple for macOS
+|Apple for macOS|
 |OpenCore for the EFI|
 |NootedRed for the AMD iGPU kext|
 |the Hackintosh Community for all the kexts|
